@@ -33,17 +33,72 @@ Este proyecto contiene:
 
 ---
 
-## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
+## 🎯 Para qué sirve
 
-**Ingeniero en Sistemas · Full Stack · Automatización · Data**
-
-- 📧 Email: zackharo1@gmail.com
-- 📱 WhatsApp: 098805517
-- 💻 GitHub: https://github.com/ieharo1
-- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
+- Automatización de procesos empresariales
+- Integración con APIs externas (ERPs, CRMs, sistemas de pago)
+- Creación de webhooks y flujos de trabajo automatizados
+- Programación de tareas y notificaciones
 
 ---
 
-## 📄 Licencia
+## 🏗 Arquitectura
+
+```
+Usuario → n8n (Docker) → Servicios externos
+                    ↓
+              Base de datos
+```
+
+---
+
+## 💻 Requisitos
+
+- Rocky Linux 9.7
+- Docker y Docker Compose
+- 2GB RAM mínimo
+- Puerto 5678 para acceso web
+
+---
+
+## 🛠 Instalación
+
+```bash
+# Estructura de carpetas
+mkdir -p /opt/n8n/n8n_data
+
+# Copiar docker-compose.yml
+# Configurar .env con credenciales
+
+# Iniciar servicios
+docker-compose up -d
+```
+
+---
+
+## 🌐 Acceso
+
+- URL: `http://tu-servidor:5678`
+- Credenciales: Configurables en `.env`
+
+---
+
+## 🔐 Seguridad
+
+- No exponer puertos innecesarios
+- Usar autenticación robusta
+- Mantener .env fuera del repositorio
+- Usar proxy reverso con SSL en producción
+
+---
+
+👨‍💻 Desarrollado por Isaac Esteban Haro Torres
+
+Ingeniero en Sistemas · Full Stack · Automatización · Data
+
+    📧 Email: zackharo1@gmail.com
+    📱 WhatsApp: 098805517
+    💻 GitHub: https://github.com/ieharo1
+    🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
 © 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
