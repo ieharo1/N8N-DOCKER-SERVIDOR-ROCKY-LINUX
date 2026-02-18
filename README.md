@@ -1,11 +1,11 @@
-# N8N-SERVER-ROCKY LINUX
+# 🤖 N8N Server - Rocky Linux
 
 Repositorio de configuración y despliegue de **n8n** en Rocky Linux 9.7 usando Docker y Docker Compose.  
 Incluye la estructura de carpetas, `docker-compose.yml`, y archivos de configuración necesarios para levantar un servidor n8n listo para producción básica.
 
 ---
 
-## Descripción
+## 📝 Descripción
 
 Este proyecto contiene:
 
@@ -20,15 +20,16 @@ Este proyecto contiene:
 
 ---
 
-## Estructura del proyecto
+## 📂 Estructura del Proyecto
 
-```text
+```
 /opt/n8n/
 ├── docker-compose.yml       # Configuración de Docker Compose
 ├── .gitignore               # Ignora .env y datos sensibles
 ├── README.md                # Este archivo
 ├── .env                     # Variables de entorno (NO subir)
 └── n8n_data/                # Datos persistentes de n8n
+```
 
 ---
 
